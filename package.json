@@ -1,5 +1,5 @@
 {
-  "name": "my-qwik-library-name",
+  "name": "@abelfubu/tanqwikine",
   "version": "0.0.1",
   "description": "Create a reusable Qwik component library",
   "main": "./lib/index.qwik.mjs",
@@ -44,8 +44,12 @@
     "eslint-plugin-qwik": "latest",
     "np": "7.6.1",
     "prettier": "2.8.8",
+    "sass": "^1.62.1",
     "typescript": "5.0.4",
     "undici": "5.22.1",
     "vite": "4.3.5"
+  },
+  "dependencies": {
+    "pollen-css": "^4.6.2"
   }
 }

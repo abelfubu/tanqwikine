@@ -1,0 +1,38 @@
+button {
+  color: var(--color-dark-100);
+  padding: 0.4rem 0.7rem;
+  border: none;
+  font-size: 1.1rem;
+  outline: none;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.1rem;
+  align-items: center;
+  border-radius: var(--radius-xs);
+  box-shadow: 0 0 0 1px var(--color-dark-200);
+  transition: box-shadow 200ms var(--ease-in-out-sine);
+
+  &:not([disabled]) {
+    cursor: pointer;
+  }
+
+  &:hover {
+    box-shadow: 0 0 0 2px var(--color-dark-200);
+  }
+
+  &:active:not([disabled]) {
+    filter: brightness(0.8);
+  }
+
+  &:disabled {
+    box-shadow: none;
+  }
+
+  &.accent {
+    box-shadow: 0 0 0 1px var(--color-yellow-400);
+    &:hover {
+      box-shadow: 0 0 0 2px var(--color-yellow-400);
+    }
+  }
+}

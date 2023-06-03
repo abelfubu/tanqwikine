@@ -1,5 +1,6 @@
-import { Counter } from './components/counter/counter';
-import { Logo } from './components/logo/logo';
+import "../pollen.css";
+import { Button } from "./components/button/button";
+import "./global.scss";
 
 export default () => {
   return (
@@ -9,8 +10,9 @@ export default () => {
         <title>Qwik Blank App</title>
       </head>
       <body>
-        <Logo />
-        <Counter />
+        <h1>Button</h1>
+        <Button>Click Me</Button>
+        <Button icon="close">Close</Button>
       </body>
     </>
   );

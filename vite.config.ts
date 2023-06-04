@@ -12,12 +12,5 @@ export default defineConfig(() => {
       },
     },
     plugins: [qwikVite()],
-    css: {
-      preprocessorOptions: {
-        scss: {
-          includePaths: ["./src/theme"],
-        },
-      },
-    },
   };
 });

@@ -9,7 +9,7 @@ button {
   justify-content: space-between;
   gap: 0.1rem;
   align-items: center;
-  border-radius: var(--radius-xs);
+  border-radius: var(--radius-sm);
   box-shadow: 0 0 0 1px var(--color-dark-200);
   transition: box-shadow 200ms var(--ease-in-out-sine);
 
@@ -30,9 +30,18 @@ button {
   }
 
   &.accent {
-    box-shadow: 0 0 0 1px var(--color-yellow-400);
+    box-shadow: 0 0 0 1px var(--color-primary-400);
     &:hover {
-      box-shadow: 0 0 0 2px var(--color-yellow-400);
+      box-shadow: 0 0 0 2px var(--color-primary-400);
     }
   }
+
+  img {
+    border-radius: var(--radius-100);
+    margin-right: var(--size-2);
+  }
+}
+
+span.material-icons {
+  margin-left: -6px;
 }

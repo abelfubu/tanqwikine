@@ -1,0 +1,11 @@
+a {
+  text-decoration: none;
+  color: var(--color-light-400);
+  transition: color 200ms;
+  font-weight: var(--weight-semibold);
+  cursor: pointer;
+
+  &:hover {
+    color: var(--color-primary-400);
+  }
+}
